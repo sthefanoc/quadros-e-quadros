@@ -6,36 +6,36 @@ Variables
 
 :root {
   /* dark shades of primary color*/
-  --clr-primary-1: hsl(22, 28%, 21%);
-  --clr-primary-2: hsl(22, 28%, 29%);
-  --clr-primary-3: hsl(22, 28%, 37%);
-  --clr-primary-4: hsl(22, 28%, 45%);
+  --clr-primary-1: #22080b;
+  --clr-primary-2: #441017;
+  --clr-primary-3: #661922;
+  --clr-primary-4: #88212e;
   /* primary/main color */
-  --clr-primary-5: hsl(22, 31%, 52%);
+  --clr-primary-5: #aa2939;
   /* lighter shades of primary color */
-  --clr-primary-6: hsl(22, 31%, 60%);
-  --clr-primary-7: hsl(22, 31%, 67%);
-  --clr-primary-8: hsl(20, 31%, 74%);
-  --clr-primary-9: hsl(22, 31%, 81%);
-  --clr-primary-10: hsl(22, 31%, 88%);
+  --clr-primary-6: #bb5461;
+  --clr-primary-7: #cc7f88;
+  --clr-primary-8: #dda9b0;
+  --clr-primary-9: #eed4d7;
+  --clr-primary-10: #f7eaeb;
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
+  --clr-grey-1: #171716;
+  --clr-grey-2: #2d2e2c;
+  --clr-grey-3: #444542;
+  --clr-grey-4: #5a5c58;
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-5: #71736f;
+  --clr-grey-6: #888985;
+  --clr-grey-7: #9ea09b;
+  --clr-grey-8: #b5b7b1;
+  --clr-grey-9: #cbcec7;
+  --clr-grey-10: #e2e5dd;
   --clr-white: #fff;
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
-  --clr-black: #222;
+  --clr-black: #1c1c1c;
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
@@ -103,6 +103,9 @@ h5 {
 p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-3);
+}
+button:focus{
+  outline: none
 }
 @media screen and (min-width: 800px) {
   h1 {

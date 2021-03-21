@@ -1,39 +1,39 @@
-import React from 'react'
-import { useProductsContext } from '../context/products_context'
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
-import Error from './Error'
-import Loading from './Loading'
-import Product from './Product'
+import React from 'react';
+import { useProductsContext } from '../context/products_context';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import Error from './Error';
+import Loading from './Loading';
+import Product from './Product';
 const FeaturedProducts = () => {
   const {
     products_loading: loading,
     products_error: error,
     featured_products: featured,
-  } = useProductsContext()
+  } = useProductsContext();
   if (loading) {
-    return <Loading />
+    return <Loading />;
   }
   if (error) {
-    return <Error />
+    return <Error />;
   }
   return (
     <Wrapper className='section'>
       <div className='title'>
-        <h2>featured products</h2>
+        <h2>Nossos destaques</h2>
         <div className='underline'></div>
       </div>
       <div className='section-center featured'>
         {featured.slice(0, 3).map((product) => {
-          return <Product key={product.id} {...product} />
+          return <Product key={product.id} {...product} />;
         })}
       </div>
-      <Link to='/products' className='btn'>
-        all products
+      <Link to='/produtos' className='btn'>
+        todos os produtos
       </Link>
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.section`
   background: var(--clr-grey-10);
@@ -56,6 +56,6 @@ const Wrapper = styled.section`
       grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     }
   }
-`
+`;
 
-export default FeaturedProducts
+export default FeaturedProducts;

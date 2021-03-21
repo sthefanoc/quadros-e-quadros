@@ -1,15 +1,17 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
-import heroBcg from '../assets/hero-bcg.jpeg'
-import heroBcg2 from '../assets/hero-bcg-2.jpeg'
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+// import heroBcg from '../assets/hero-bcg.jpeg'
+import heroBcg from '../assets/quadro-decorativo-freedom-ambiente-completo.png';
+// import heroBcg2 from '../assets/hero-bcg-2.jpeg'
+import heroBcg2 from '../assets/quadro-decorativo-canoa-ao-por-do-sol-moldura.png';
 const Hero = () => {
   return (
     <Wrapper className='section-center'>
       <article className='content'>
         <h1>
-          design your <br />
-          comfort zone
+          Quadros e Quadros <br />
+          Estilo e conforto
         </h1>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, at
@@ -17,8 +19,8 @@ const Hero = () => {
           aperiam odio ducimus, obcaecati libero et quia tempora excepturi quis
           alias?
         </p>
-        <Link to='/products' className='btn hero-btn'>
-          shop now
+        <Link to='/produtos' className='btn hero-btn'>
+          compre agora
         </Link>
       </article>
       <article className='img-container'>
@@ -26,8 +28,8 @@ const Hero = () => {
         <img src={heroBcg2} alt='person working' className='accent-img' />
       </article>
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.section`
   min-height: 60vh;
@@ -77,18 +79,21 @@ const Wrapper = styled.section`
       width: 250px;
       transform: translateX(-50%);
       border-radius: var(--radius);
+      -webkit-box-shadow: 3px 3px 5px 6px rgba(68, 68, 68, 0.4);
+      -moz-box-shadow: 3px 3px 5px 6px rgba(68, 68, 68, 0.4);
+      box-shadow: 3px 3px 5px 6px rgba(68, 68, 68, 0.4);
     }
     .img-container::before {
-      content: '';
+      /* content: '';
       position: absolute;
       width: 10%;
       height: 80%;
       background: var(--clr-primary-9);
       bottom: 0%;
       left: -8%;
-      border-radius: var(--radius);
+      border-radius: var(--radius); */
     }
   }
-`
+`;
 
-export default Hero
+export default Hero;
