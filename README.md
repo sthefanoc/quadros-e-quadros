@@ -22,7 +22,7 @@ npm start
 
 #### .env vars
 
-It is also needed to add these API keys so that the functionality works.
+It is also needed to add these API keys on a ".env" file so that the functionality works
 
 - REACT_APP_AUTH_DOMAIN=
 - REACT_APP_CLIENT_ID=
