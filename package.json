@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^1.2.0",
-    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/react-stripe-js": "github:stripe/react-stripe-js",
     "@stripe/stripe-js": "^1.11.0",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.1.2",
